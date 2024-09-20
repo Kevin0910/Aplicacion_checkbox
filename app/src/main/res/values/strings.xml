@@ -9,4 +9,6 @@
     <string name="label_btn_resolver">Resolver</string>
     <string name="label_btn_limpiar">Limpiar</string>
     <string name="text_marca">"Powered by: Kevin Gonzalo Cruz Martinez"</string>
+    <string name="span_1">"#Rey del commit Senior del push"</string>
+    <string name="span_2">"#Senir Dev amo del teclado"</string>
 </resources>

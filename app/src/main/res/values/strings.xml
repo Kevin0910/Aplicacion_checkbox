@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Aplicacion-checkbox</string>
+    <string name="input_1">Ingresar Numero Uno</string>
+    <string name="input_2">Ingresar Numero Dos</string>
+    <string name="label_suma">Suma</string>
+    <string name="label_resta">Resta</string>
+    <string name="label_dividir">División</string>
+    <string name="label_multiplicar">Multiplicación</string>
+    <string name="label_btn_resolver">Resolver</string>
+    <string name="label_btn_limpiar">Limpiar</string>
+    <string name="text_marca">"Powered by: Kevin Gonzalo Cruz Martinez"</string>
+</resources>

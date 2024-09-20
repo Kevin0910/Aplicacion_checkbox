@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:hint="@string/input_1"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="@string/input_2"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input1" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSuma"
+        android:layout_width="124dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/label_suma"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input2" />
+
+    <CheckBox
+        android:id="@+id/checkBoxResta"
+        android:layout_width="119dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/label_resta"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxSuma" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDividir"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/label_dividir"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxMultiplicacion" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMultiplicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/label_multiplicar"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxResta" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="269dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="340dp"
+        android:gravity="center"
+        android:text="Aqui se mostarar los resultados"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.856"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonResolver"
+        android:layout_width="130dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="36dp"
+        android:backgroundTint="#4CAF50"
+        android:drawableTint="#4CAF50"
+        android:onClick="resolver"
+        android:text="@string/label_btn_resolver"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toEndOf="@+id/ButtonLimpiar"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/ButtonLimpiar"
+        android:layout_width="134dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="120dp"
+        android:backgroundTint="#E91E63"
+        android:onClick="limpíar"
+        android:text="@string/label_btn_limpiar"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxDividir" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="495dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/text_marca"
+        android:textAlignment="center"
+        android:textColor="#A5000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
